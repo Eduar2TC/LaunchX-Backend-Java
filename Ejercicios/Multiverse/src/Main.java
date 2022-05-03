@@ -52,6 +52,7 @@ public class Main {
         Ball ball0 = new Ball(peter, kingPin, 0.2);
         Ball ball1 = new Ball(gwen, kingPin, 0.1);
         Ball ball2 = new Ball(morales, kingPin, 0.3);
+        Ball ball3 = new Ball(morales, kingPin, 0.1);
 
         ArrayList<Personaje> personajes = new ArrayList<Personaje>();
         personajes.add(peter);
@@ -63,6 +64,7 @@ public class Main {
         balls.add(ball0);
         balls.add(ball1);
         balls.add(ball2);
+        balls.add(ball3);
 
         Drawing drawing = new Drawing( personajes, balls );
         drawing.initWindow();

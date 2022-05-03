@@ -32,6 +32,7 @@ public class Drawing extends JPanel {
             g.drawImage( personaje.getImagen(), personaje.getX(), personaje.getY(), 100, 100, this);
             g.setFont(new Font( "Helvetica", Font.BOLD, 15 ));
             g.drawString( personaje.getNombre(), personaje.getX(), personaje.getY() + personaje.getImagen().getHeight(this) / 2 );
+            g.drawString( String.valueOf( personaje.getSalud() ), personaje.getX(), personaje.getY() + personaje.getImagen().getHeight(this) / 7 );
         }
     }
     public void jFrame( JFrame jFrame) {
